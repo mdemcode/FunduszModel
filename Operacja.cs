@@ -9,11 +9,23 @@ using System.Threading.Tasks;
 namespace FunduszModel
 {
     [Table ("Operacje")]
-    class Operacja
+    public class Operacja
     {
         [Key]
         public int Id { get; set; }
-        public DateTime DataOperacji { get; set; }
+        public DateTime Data { get; set; }
+        public TypOperacji Typ { get; set; }
+        public string Opis { get; set; }
+        public decimal Kwota { get; set; }
+        public decimal SaldoFunduszuPoOperacji { get; set; }
 
+        public enum TypOperacji
+        {
+            FunduszZalozycielski,
+            SplataPozyczki,
+            PrzychodZLokaty,
+            PrzychodInny,
+
+        };
     }
 }
