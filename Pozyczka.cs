@@ -19,6 +19,6 @@ namespace FunduszModel
         public DateTime DataWyplaty { get; set; }
         public decimal KwotaCalkowita { get; set; }
         public decimal PozostaloDoSplaty { get; set; }
-
+        public bool Splacona { get; set; }
     }
 }

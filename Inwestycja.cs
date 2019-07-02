@@ -15,5 +15,10 @@ namespace FunduszModel
         public int Id { get; set; }
         public string NrInwestycji { get; set; }
         public string PostFix { get; set; } //NrInwestycji+PostFix, np.: 1/INW/2019
+        public decimal KwotaPoczatkowa { get; set; }
+        public string Opis { get; set; }
+        public DateTime DataRozpoczecia { get; set; }
+        public bool Zakonczona { get; set; }
+        public decimal KwotaKoncowa { get; set; }
     }
 }
