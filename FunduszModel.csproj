@@ -43,8 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fundusz.cs" />
+    <Compile Include="Inwestycja.cs" />
+    <Compile Include="Lokata.cs" />
     <Compile Include="Operacja.cs" />
+    <Compile Include="Pozyczka.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uczestnik.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

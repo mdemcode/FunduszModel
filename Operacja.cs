@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FunduszModel
 {
-    [Table ("Operacje")]
+    [Table("Operacje")]
     public class Operacja
     {
         [Key]
@@ -17,7 +17,8 @@ namespace FunduszModel
         public TypOperacji Typ { get; set; }
         public string Opis { get; set; }
         public decimal Kwota { get; set; }
-        public decimal SaldoFunduszuPoOperacji { get; set; }
+        public string NrElementuOperacji { get; set; }
+        //public decimal IloscGotowkiPoOperacji { get; set; }
 
         public enum TypOperacji
         {
@@ -25,7 +26,9 @@ namespace FunduszModel
             SplataPozyczki,
             PrzychodZLokaty,
             PrzychodInny,
-
+            WyplataPozyczki,
+            RozchodNaLokate,
+            RozchodInny
         };
     }
 }
